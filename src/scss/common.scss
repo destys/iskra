@@ -1,0 +1,9 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+a {
+    transition: color 0.4s ease;
+
+    &::before {
+        transition: color 0.4s ease;
+    }
+}

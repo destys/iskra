@@ -1,0 +1,36 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+	display: inline-flex;
+	padding: rem(22) rem(20);
+
+	background-color: $red;
+	border-radius: 6px;
+
+	font-weight: 500;
+	font-size: rem(16);
+	color: #fff;
+
+	transition: background 0.4s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #f35454;
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
+
+.Rectangle_3_copy {
+	border-radius: 6px;
+	background-color: rgb(238, 70, 70);
+	position: absolute;
+	left: 360px;
+	top: 580px;
+	width: 245px;
+	height: 53px;
+	z-index: 351;
+}
