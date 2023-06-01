@@ -16,21 +16,10 @@
 
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: #f35454;
+			background-color: #f46464;
 		}
 	}
 	&._fw {
 		width: 100%;
 	}
-}
-
-.Rectangle_3_copy {
-	border-radius: 6px;
-	background-color: rgb(238, 70, 70);
-	position: absolute;
-	left: 360px;
-	top: 580px;
-	width: 245px;
-	height: 53px;
-	z-index: 351;
 }
