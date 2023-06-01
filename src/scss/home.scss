@@ -40,3 +40,100 @@
 }
 
 //====================================================================================================
+.advantages {
+    margin-bottom: rem(76);
+    // .advantages__container
+    &__container {
+        position: relative;
+        padding-top: rem(45);
+        &::before {
+            content: "";
+            background: url("@img/adv_lines.png") 0 0 no-repeat;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    // .advantages__list
+    &__list {
+        @include gridCards("fit", rem(300), 1fr, rem(23));
+
+        position: relative;
+        z-index: 2;
+    }
+    // .advantages__item
+    &__item {
+        display: flex;
+        gap: rem(30);
+
+        padding: rem(30) rem(35);
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 23px 62px 0px rgba(211, 231, 240, 0.9);
+    }
+}
+.item-advantages {
+    // .item-advantages__icon
+    &__icon {
+        flex: 0 0 rem(70);
+    }
+    // .item-advantages__content
+    &__content {
+    }
+    // .item-advantages__title
+    &__title {
+        margin-bottom: rem(20);
+        font-weight: 500;
+        font-size: rem(18);
+        color: $blue;
+    }
+    // .item-advantages__text
+    &__text {
+    }
+}
+//========================================================================================================================================================
+.directions {
+    // .directions__container
+    &__container {
+    }
+    // .directions__title
+    &__title {
+        margin-bottom: rem(24);
+        font-weight: 600;
+        font-size: rem(42);
+        color: $blue;
+    }
+    // .directions__subtitle
+    &__subtitle {
+        margin-bottom: rem(42);
+        max-width: rem(836);
+        font-weight: 300;
+    }
+    // .directions__list
+    &__list {
+        @include gridCards("fit", rem(300), 1fr);
+    }
+    // .directions__item
+    &__item {
+        display: flex;
+        gap: rem(20);
+    }
+}
+.item-directions {
+    // .item-directions__image
+    &__image {
+    }
+    // .item-directions__content
+    &__content {
+    }
+    // .item-directions__title
+    &__title {
+    }
+    // .item-directions__text
+    &__text {
+    }
+}
+//========================================================================================================================================================
