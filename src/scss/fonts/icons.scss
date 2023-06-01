@@ -16,16 +16,18 @@
 	}
 }
 
+._icon-search:before {
+	content: "\e904";
+}
 ._icon-tg:before {
 	content: "\e900";
-  }
-  ._icon-phone:before {
+}
+._icon-phone:before {
 	content: "\e901";
-  }
-  ._icon-wa:before {
+}
+._icon-wa:before {
 	content: "\e902";
-  }
-  ._icon-place:before {
+}
+._icon-place:before {
 	content: "\e903";
-  }
-  
+}
