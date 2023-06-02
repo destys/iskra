@@ -1,3 +1,202 @@
 //====================================================================================================
+.footer {
+    // .footer__top
+    &__top {
+        background-color: #e7f2f7;
+    }
+    // .footer__center
+    &__center {
+        padding-top: rem(66);
+        padding-bottom: rem(40);
+        background-color: #dcecf3;
+    }
+    // .footer__bottom
+    &__bottom {
+        padding-bottom: rem(77);
+        background-color: #dcecf3;
+    }
+}
+//========================================================================================================================================================
+
+.top-footer {
+    padding: rem(40) 0;
+    // .top-footer__container
+    &__container {
+        @include gridCards("fill", rem(300), 1fr, rem(15));
+    }
+    // .top-footer__col
+    &__col {
+    }
+    // .top-footer__menu
+    &__menu {
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+        .menu {
+            // .menu__body
+            &__body {
+            }
+            // .menu__title
+            &__title {
+                margin-bottom: rem(10);
+                font-weight: 600;
+                font-size: rem(16);
+            }
+            // .menu__list
+            &__list {
+            }
+            // .menu__item
+            &__item {
+                &:not(:last-child) {
+                    margin-bottom: rem(5);
+                }
+            }
+            // .menu__link
+            &__link {
+                font-size: rem(12);
+                color: $blue;
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}
+//========================================================================================================================================================
+
+.center-footer {
+    // .center-footer__container
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(20);
+    }
+    // .center-footer__logo
+    &__logo {
+        transition: transform 0.2s ease;
+
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+    // .center-footer__address
+    &__address {
+        align-items: center;
+        gap: rem(10);
+
+        font-size: rem(12);
+
+        &::before {
+            font-size: rem(21);
+            color: $blue;
+        }
+    }
+    // .center-footer__phones
+    &__phones {
+        align-items: center;
+        gap: rem(10);
+
+        &::before {
+            font-size: rem(21);
+            color: $blue;
+        }
+    }
+    // .bottom-footer__social
+    &__social {
+    }
+    // .bottom-footer__callback
+    &__callback {
+        padding: rem(14) rem(18);
+    }
+}
+.phones-footer {
+    // .phones-footer__list
+    &__list {
+    }
+    // .phones-footer__item
+    &__item {
+        display: block;
+        font-weight: 500;
+        font-size: rem(18);
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+.social-footer {
+    // .social-footer__email
+    &__email {
+        display: block;
+        margin-bottom: rem(5);
+        font-weight: 300;
+        font-size: rem(14);
+        color: $blue;
+
+        &:hover {
+            color: $red;
+        }
+    }
+    // .social-footer__list
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+            gap: rem(6);
+            font-size: rem(0);
+
+            @media (any-hover: hover) {
+                &:hover::before {
+                    color: $red;
+                }
+            }
+            &::before {
+                font-size: rem(16);
+                color: $blue;
+            }
+        }
+    }
+}
+//========================================================================================================================================================
+
+.bottom-footer {
+    // .bottom-footer__container
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(30);
+        font-size: rem(12);
+    }
+    // .bottom-footer__left
+    &__left {
+        color: #528399;
+    }
+    // .bottom-footer__right
+    &__right {
+        display: flex;
+        gap: rem(20);
+
+        a {
+            color: $blue;
+            text-decoration: underline !important;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+}
 
 //====================================================================================================

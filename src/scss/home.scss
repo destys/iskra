@@ -6,39 +6,43 @@
 
     background-size: cover !important;
 
+    @media (max-width: $mobileSmall) {
+        background-position: 54% 50%;
+    }
+
     // .intro__container
     &__container {
     }
     // .intro__content
     &__content {
         padding-top: rem(120);
+        @include adaptiveValue("padding-top", 120, 30);
         max-width: rem(600);
     }
     // .intro__top-title
     &__top-title {
-        margin-bottom: rem(24);
+        @include adaptiveValue("margin-bottom", 24, 18);
         font-weight: 500;
-        font-size: rem(24);
+        @include adaptiveValue("font-size", 24, 16);
     }
     // .intro__title
     &__title {
-        margin-bottom: rem(24);
+        @include adaptiveValue("margin-bottom", 24, 18);
         font-weight: 700;
-        font-size: rem(53);
+        @include adaptiveValue("font-size", 53, 24);
         color: $blue;
         text-transform: uppercase;
     }
     // .intro__subtitle
     &__subtitle {
-        margin-bottom: rem(45);
+        @include adaptiveValue("margin-bottom", 45, 24);
         font-weight: 300;
-        font-size: rem(24);
+        @include adaptiveValue("font-size", 24, 16);
     }
     // .intro__button
     &__button {
     }
 }
-
 //====================================================================================================
 .advantages {
     margin-bottom: rem(76);
@@ -100,6 +104,7 @@
         border: 1px solid #ddedf5;
         border-radius: 10px;
         position: relative;
+        overflow: hidden;
 
         &::after {
             content: "";
@@ -230,6 +235,7 @@
         position: relative;
         border: 1px solid #ddedf5;
         border-radius: 10px;
+        overflow: hidden;
         &::before {
             content: "";
             background: url("@img/dir_lines.png") 0 0 no-repeat;
@@ -313,6 +319,7 @@
         position: relative;
         border: 1px solid #ddedf5;
         border-radius: 10px;
+        overflow: hidden;
 
         &::before {
             content: "";

@@ -1,0 +1,32 @@
+.burger {
+    display: none;
+    @media (max-width: $pc) {
+        display: block;
+
+        width: 100%;
+        height: rem(500);
+        background-color: $blue;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        transform: translateX(-300%);
+        opacity: 0;
+
+        transition: opacity 0.4s ease;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: -1;
+
+        .menu-open & {
+            transform: translate(0px, 0px);
+            z-index: 1000;
+            opacity: 1;
+        }
+    }
+
+    &__wrapper {
+        /* overflow-y: scroll; */
+    }
+}

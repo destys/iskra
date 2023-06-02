@@ -10,10 +10,15 @@
 	border-radius: 6px;
 
 	font-weight: 500;
-	font-size: rem(16);
+	font-size: rem(14);
+	text-align: center;
 	color: #fff;
 
 	transition: background 0.4s ease, border-color 0.4s ease, color 0.4s ease;
+
+	@media (min-width: $pc) {
+		font-size: rem(16);
+	}
 
 	@media (any-hover: hover) {
 		&:hover {
