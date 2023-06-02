@@ -126,7 +126,7 @@ flsForms.formFieldsInit({
 Документація плагіна: https://github.com/RobinHerbots/inputmask
 Сніппет(HTML):
 */
-// import "./files/forms/inputmask.js";
+import "./files/forms/inputmask.js";
 
 /* Модуль роботи з повзунком */
 /*

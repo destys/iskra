@@ -19,3 +19,15 @@ h3 {
     font-size: rem(18);
     color: $blue;
 }
+
+.map {
+    margin-bottom: rem(75);
+    // .map__container
+    &__container {
+        iframe {
+            width: 100%;
+            height: rem(550);
+            border-radius: 10px;
+        }
+    }
+}

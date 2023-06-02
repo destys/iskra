@@ -3,20 +3,33 @@
 
 .button {
 	display: inline-flex;
-	padding: rem(22) rem(20);
+	padding: rem(14) rem(18);
 
 	background-color: $red;
+	border: 1px solid $red;
 	border-radius: 6px;
 
 	font-weight: 500;
 	font-size: rem(16);
 	color: #fff;
 
-	transition: background 0.4s ease;
+	transition: background 0.4s ease, border-color 0.4s ease, color 0.4s ease;
 
 	@media (any-hover: hover) {
 		&:hover {
 			background-color: #f46464;
+			border-color: #f46464;
+		}
+	}
+	&._transparent {
+		background-color: transparent;
+		color: $red;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $red;
+				color: #fff;
+			}
 		}
 	}
 	&._fw {
