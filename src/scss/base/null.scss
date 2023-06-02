@@ -50,10 +50,13 @@ a {
 	text-decoration: none;
 }
 ul li {
-	list-style: inside;
+	list-style: none;
+	.page & {
+		list-style: inside;
 
-	&::marker {
-		color: $blue;
+		&::marker {
+			color: $blue;
+		}
 	}
 }
 img {

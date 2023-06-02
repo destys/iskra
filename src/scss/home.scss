@@ -86,9 +86,6 @@
     // .item-advantages__title
     &__title {
         margin-bottom: rem(20);
-        font-weight: 500;
-        font-size: rem(18);
-        color: $blue;
     }
     // .item-advantages__text
     &__text {
@@ -96,15 +93,16 @@
 }
 //========================================================================================================================================================
 .directions {
+    margin-bottom: rem(65);
     // .directions__container
     &__container {
+        padding: rem(65) rem(45);
+        border: 1px solid #ddedf5;
+        border-radius: 10px;
     }
     // .directions__title
     &__title {
         margin-bottom: rem(24);
-        font-weight: 600;
-        font-size: rem(42);
-        color: $blue;
     }
     // .directions__subtitle
     &__subtitle {
@@ -131,9 +129,61 @@
     }
     // .item-directions__title
     &__title {
+        margin-bottom: rem(20);
     }
     // .item-directions__text
     &__text {
     }
 }
 //========================================================================================================================================================
+.confidence {
+    // .confidence__container
+    &__container {
+    }
+    // .confidence__title
+    &__title {
+    }
+    // .confidence__subtitle
+    &__subtitle {
+    }
+    // .confidence__content
+    &__content {
+    }
+    // .confidence__slider
+    &__slider {
+        position: relative;
+        margin: 0 rem(46);
+        padding: rem(20);
+    }
+    // .confidence__wrapper
+    &__wrapper {
+    }
+    // .confidence__slide
+    &__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 11px 27px 0px rgba(176, 206, 220, 0.9);
+        border-radius: 10px;
+        overflow: hidden;
+
+        height: rem(100);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    // .confidence__nav
+    &__nav {
+        position: absolute;
+        top: 50%;
+        left: rem(-46);
+        width: 100%;
+        z-index: 22;
+
+        display: flex;
+        justify-content: space-between;
+    }
+}
