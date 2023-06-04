@@ -4,6 +4,7 @@
     margin-bottom: rem(55);
     min-height: rem(450);
     background: url("@img/cb-bg.jpg") 0 0 no-repeat;
+    background-size: cover !important;
     // .callback__container
     &__container {
         width: 100%;
@@ -22,10 +23,13 @@
     // .callback__form
     &__form {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: rem(10);
 
-        margin-bottom: rem(50);
+        @include adaptiveValue("margin-bottom", 50, 24);
+
+        @media (min-width: $mobile) {
+            grid-template-columns: repeat(3, 1fr);
+        }
 
         .form {
             // .form__row
@@ -46,16 +50,23 @@
     // .callback__contacts
     &__contacts {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         gap: rem(10);
+        padding-bottom: rem(40);
 
         font-weight: 500;
         font-size: rem(18);
         color: $blue;
 
-        p {
+        div {
             display: flex;
             gap: rem(10);
+
+            @media (min-width: $mobile) {
+                justify-content: center;
+            }
         }
 
         a {
@@ -75,6 +86,11 @@
                     color: $red;
                 }
             }
+        }
+
+        @media (min-width: $mobile) {
+            padding-bottom: 0;
+            flex-direction: row;
         }
     }
 }

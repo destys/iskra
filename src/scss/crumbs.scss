@@ -1,0 +1,36 @@
+.crumbs {
+    margin: rem(20) auto rem(45);
+    // .crumbs__container
+    &__container {
+    }
+    // .crumbs__list
+    &__list {
+        display: flex;
+        gap: rem(10);
+    }
+    // .crumbs__item
+    &__item {
+        list-style: none !important;
+    }
+    // .crumbs__link
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $blue;
+
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            margin-left: rem(10);
+            width: rem(14);
+            height: rem(5);
+            background: url("@img/icons/arr-crumbs.png") 0 0 no-repeat;
+        }
+    }
+}

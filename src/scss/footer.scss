@@ -6,13 +6,22 @@
     }
     // .footer__center
     &__center {
-        padding-top: rem(66);
-        padding-bottom: rem(40);
+        padding-top: rem(26);
+        padding-bottom: rem(15);
         background-color: #dcecf3;
+
+        @media (min-width: $mobile) {
+            padding-top: rem(33);
+            padding-bottom: rem(20);
+        }
+        @media (min-width: $tablet) {
+            padding-top: rem(66);
+            padding-bottom: rem(40);
+        }
     }
     // .footer__bottom
     &__bottom {
-        padding-bottom: rem(77);
+        @include adaptiveValue("padding-bottom", 77, 33);
         background-color: #dcecf3;
     }
 }
@@ -71,9 +80,14 @@
     // .center-footer__container
     &__container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
         gap: rem(20);
+
+        @media (min-width: $mobile) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
     // .center-footer__logo
     &__logo {
@@ -113,6 +127,14 @@
     // .bottom-footer__callback
     &__callback {
         padding: rem(14) rem(18);
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
+
+        @media (max-width: $mobile) {
+            display: inline-flex;
+        }
     }
 }
 .phones-footer {
@@ -123,7 +145,7 @@
     &__item {
         display: block;
         font-weight: 500;
-        font-size: rem(18);
+        @include adaptiveValue("font-size", 18, 14);
 
         @media (any-hover: hover) {
             &:hover {
@@ -148,7 +170,6 @@
     // .social-footer__list
     &__list {
         display: flex;
-        justify-content: flex-end;
 
         a {
             gap: rem(6);
@@ -164,6 +185,10 @@
                 color: $blue;
             }
         }
+
+        @media (min-width: $mobile) {
+            justify-content: flex-end;
+        }
     }
 }
 //========================================================================================================================================================
@@ -172,10 +197,15 @@
     // .bottom-footer__container
     &__container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column-reverse;
         gap: rem(30);
         font-size: rem(12);
+
+        @media (min-width: $mobile) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
     // .bottom-footer__left
     &__left {
@@ -184,6 +214,7 @@
     // .bottom-footer__right
     &__right {
         display: flex;
+        flex-wrap: wrap;
         gap: rem(20);
 
         a {
