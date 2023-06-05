@@ -1,0 +1,251 @@
+.service {
+    // .service__container
+    &__container {
+        box-sizing: border-box;
+    }
+    // .service__wrapper
+    &__wrapper {
+        display: grid;
+        grid-template-columns: rem(280) 1fr;
+        gap: rem(30);
+
+        margin-bottom: rem(50);
+
+        @media (max-width: $mobile) {
+            display: block;
+        }
+    }
+    // .service__content
+    &__content {
+    }
+    // .service__title
+    &__title {
+        @include adaptiveValue("font-size", 42, 28);
+
+        @media (min-width: $tablet) {
+            max-width: 80%;
+        }
+    }
+    // .service__featured
+    &__featured {
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValue("gap", 30, 15);
+
+        @include adaptiveValue("margin-bottom", 60, 32);
+
+        @media (min-width: $pc) {
+            flex-direction: row;
+        }
+    }
+    // .service__group
+    &__group {
+        @include adaptiveValue("margin-bottom", 60, 32);
+    }
+    // .service__help
+    &__help {
+        display: flex;
+        gap: rem(30);
+        @include adaptiveValue("margin-bottom", 60, 32);
+        padding: rem(20);
+
+        background: url("@img/price-bg.jpg") 0 0 no-repeat;
+
+        @media (min-width: $tablet) {
+            padding: rem(80) rem(30);
+        }
+    }
+    // .service__others
+    &__others {
+        @include adaptiveValue("margin-bottom", 50, 32);
+    }
+}
+.featured-service {
+    // .featured-service__gallery
+    &__gallery {
+        margin: 0 auto;
+        max-width: 100%;
+
+        @media (min-width: $mobileSmall) {
+            max-width: rem(458);
+        }
+
+        @media (min-width: $pc) {
+            margin: 0;
+            flex: 0 0 rem(458);
+        }
+    }
+    // .featured-service__slider
+    &__slider {
+        margin-bottom: rem(8);
+        // .featured-service__slider_thumbs
+        &_thumbs {
+            .featured-service__slide {
+                cursor: pointer;
+            }
+        }
+    }
+    // .featured-service__wrapper
+    &__wrapper {
+    }
+    // .featured-service__slide
+    &__slide {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    // .featured-service__content
+    &__content {
+        max-width: 100%;
+        flex: 1 1 auto;
+    }
+    // .featured-service__header
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: rem(20);
+
+        margin-bottom: rem(24);
+        padding-bottom: rem(27);
+
+        border-bottom: 1px solid #d4e9f2;
+    }
+    // .featured-service__excerpt
+    &__excerpt {
+        margin-bottom: rem(28);
+        padding-bottom: rem(27);
+
+        border-bottom: 1px solid #d4e9f2;
+
+        p,
+        ul {
+            &:not(:last-child) {
+                margin-bottom: rem(16);
+            }
+        }
+    }
+    // .featured-service__button
+    &__button {
+    }
+}
+.header-featured-service {
+    // .header-featured-service__left
+    &__left {
+    }
+    // .header-featured-service__price
+    &__price {
+        font-weight: 700;
+        @include adaptiveValue("font-size", 30, 18);
+        color: $blue;
+    }
+    // .header-featured-service__vat
+    &__vat {
+    }
+    // .header-featured-service__button
+    &__button {
+    }
+}
+.group-service {
+    // .group-service__title
+    &__title {
+        margin-bottom: rem(24);
+    }
+    // .group-service__excerpt
+    &__excerpt {
+        margin-bottom: rem(34);
+    }
+    // .group-service__list
+    &__list {
+    }
+}
+.help-service {
+    // .help-service__left
+    &__left {
+        max-width: rem(516);
+    }
+    // .help-service__title
+    &__title {
+        margin-bottom: rem(21);
+        font-size: rem(18);
+    }
+    // .help-service__text
+    &__text {
+        margin-bottom: rem(32);
+        font-size: rem(12);
+    }
+    // .help-service__button
+    &__button {
+    }
+    // .help-service__right
+    &__right {
+    }
+    // .help-service__phone
+    &__phone {
+        display: block;
+        margin-bottom: rem(15);
+        font-weight: 500;
+        @include adaptiveValue("font-size", 28, 14);
+        color: $blue;
+
+        white-space: nowrap;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+    // .help-service__social
+    &__social {
+        display: flex;
+        gap: rem(10);
+    }
+}
+.social-help-service {
+    // .social-help-service__list
+    &__list {
+        display: flex;
+        gap: rem(10);
+    }
+    // .social-help-service__item
+    &__item {
+        font-size: 0;
+        color: $blue;
+
+        &:last-child {
+            color: green;
+        }
+
+        &::before {
+            font-size: rem(21);
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+    // .social-help-service__social
+    &__text {
+        max-width: rem(152);
+        font-size: rem(12);
+    }
+}
+.others-service {
+    // .others-service__title
+    &__title {
+        @include adaptiveValue("margin-bottom", 32, 24);
+    }
+    // .others-service__excerpt
+    &__excerpt {
+        @include adaptiveValue("margin-bottom", 48, 32);
+    }
+    // .others-service__list
+    &__list {
+        @include gridCards("fill", rem(300), 1fr);
+    }
+}

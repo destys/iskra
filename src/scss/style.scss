@@ -159,7 +159,10 @@ body {
 @import "callback";
 @import "burger";
 @import "crumbs";
+@import "sidebar";
+@import "service-item";
 
 // Підключення стилів окремих сторінок
 @import "home";
 @import "price-category";
+@import "service";

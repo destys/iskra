@@ -4,12 +4,139 @@
 "title":"Услуга общая"
 })
 
-<body class="price">
+<body class="service">
     <div class="wrapper">
         @@include('html/_header.htm',{})
         <main class="page">
             @@include('html/_crumbs.htm',{})
-
+            <div class="service__container">
+                <div class="service__wrapper">
+                    @@include('html/_sidebar.htm',{})
+                    <div class="service__content">
+                        <h1 class="service__title">Баллонный вентиль ВС-16 из
+                            нержавеющей стали</h1>
+                        <div class="service__featured featured-service">
+                            <div class="featured-service__gallery">
+                                <div class="featured-service__slider swiper">
+                                    <div class="featured-service__wrapper swiper-wrapper">
+                                        <div class="featured-service__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="">
+                                        </div>
+                                        <div class="featured-service__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="">
+                                        </div>
+                                        <div class="featured-service__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-service__slider_thumbs swiper">
+                                    <div class="featured-service__wrapper swiper-wrapper">
+                                        <div class="featured-service__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="">
+                                        </div>
+                                        <div class="featured-service__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="">
+                                        </div>
+                                        <div class="featured-service__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-service__content">
+                                <div class="featured-service__header header-featured-service">
+                                    <div class="header-featured-service__left">
+                                        <div class="header-featured-service__price">от 35 000 р.</div>
+                                        <div class="header-featured-service__vat">Цена с учетом НДС 20%</div>
+                                    </div>
+                                    <button type="button" class="header-featured-service__button button"
+                                        data-popup="#callback">Заказать</button>
+                                </div>
+                                <div class="featured-service__excerpt">
+                                    <p>Компания «ISKRA Engineering» поставляет технологические кейсы, ящики и чехлы на
+                                        заказ. </p>
+                                    <p>Возможно производство крупногабаритных кейсов для судовых лабораторий и мобильных
+                                        лабораторий из алюкобонда.
+                                    </p>
+                                    <p>Ударопрочные кейсы на заказ предназначены для надежного хранения и
+                                        транспортировки сложной, дорогой техники с возможностью штабелирования.</p>
+                                </div>
+                                <button type="button" class="featured-service__button button">Бесплатная
+                                    консультация</button>
+                            </div>
+                        </div>
+                        <!-- Группа услуг -->
+                        <div class="service__group group-service">
+                            <h2 class="group-service__title">Кофра ISKRA</h2>
+                            <div class="group-service__excerpt">
+                                Сопутствующие услуги ниже представлен список услуг относящийся к данной продукции.
+                                Закажите необходимую услугу или проконсультируйтесь с наш им специалистом, он подробно
+                                расскажет о каждой из услуг, также ответит на все ваши вопросы.
+                            </div>
+                            <div class="group-service__list">
+                                @@include('html/_item-service.htm',{})
+                                @@include('html/_item-service.htm',{})
+                                @@include('html/_item-service.htm',{})
+                            </div>
+                        </div>
+                        <!-- /. Группа услуг -->
+                        <!-- Группа услуг -->
+                        <div class="service__group group-service">
+                            <h2 class="group-service__title">Кофра ISKRA</h2>
+                            <div class="group-service__excerpt">
+                                Сопутствующие услуги ниже представлен список услуг относящийся к данной продукции.
+                                Закажите необходимую услугу или проконсультируйтесь с наш им специалистом, он подробно
+                                расскажет о каждой из услуг, также ответит на все ваши вопросы.
+                            </div>
+                            <div class="group-service__list">
+                                @@include('html/_item-service.htm',{})
+                                @@include('html/_item-service.htm',{})
+                                @@include('html/_item-service.htm',{})
+                            </div>
+                        </div>
+                        <!-- /. Группа услуг -->
+                    </div>
+                </div>
+                <div class="service__help help-service">
+                    <div class="help-service__left">
+                        <h2 class="help-service__title">Нужна помощь?</h2>
+                        <div class="help-service__text">
+                            <a href="#">Консультация</a> – мы можем помочь в
+                            подборенеобходимой
+                            продукции, также разобраться в их нюансах и тонкостях. Звоните по горячему номеру
+                            телефона или заполните заявку, и мы вам перезвоним в ближайшее время.
+                        </div>
+                        <button type="button" class="help-service__button button" data-popup="#callback">Хочу
+                            консультацию</button>
+                    </div>
+                    <div class="help-service__right">
+                        <h3 class="help-service__title">Позвоните нам</h3>
+                        <a href="tel:+79111670772" class="help-service__phone">+7 (911) 167-07-72</a>
+                        <div class="help-service__social social-help-service">
+                            <div class="social-help-service__list">
+                                <a href="#" class="social-help-service__item _icon-tg">tg</a>
+                                <a href="#" class="social-help-service__item _icon-wa">wa</a>
+                            </div>
+                            <div class="social-help-service__text">Напишите нам в
+                                удобный мессенджер</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service__others others-service">
+                    <h2 class="others-service__title">Другие наши услуги</h2>
+                    <div class="others-service__excerpt">Здесь представлены товары, которые сочетаются с данной
+                        продукцией. С помощью данного перечня представленных товаров вы сможите собрать необходимую
+                        конструкцию. При необходимости обратите к нашим инженерам за помощью или консультацией это
+                        бесплатно.</div>
+                    <div class="others-service__list">
+                        @@include('html/_service-item-col.htm',{})
+                        @@include('html/_service-item-col.htm',{})
+                        @@include('html/_service-item-col.htm',{})
+                        @@include('html/_service-item-col.htm',{})
+                    </div>
+                </div>
+            </div>
             @@include('html/_callback.htm',{})
         </main>
         @@include('html/_footer.htm',{})

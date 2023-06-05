@@ -7,7 +7,7 @@
 // Підключаємо слайдер Swiper з node_modules
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Thumbs } from 'swiper';
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay, 
@@ -101,6 +101,104 @@ function initSliders() {
 
 			}
 		});
+	}
+	if (document.querySelector('.featured-service__slider')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		const featuredThumbs = new Swiper('.featured-service__slider_thumbs', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 5,
+			//autoHeight: true,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			lazy: true,
+
+			// Події
+			on: {
+
+			}
+		});
+
+		new Swiper('.featured-service__slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation, Thumbs],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 20,
+			//autoHeight: true,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			lazy: true,
+			thumbs: {
+				swiper: featuredThumbs
+			},
+
+			// Події
+			on: {
+
+			}
+		});
+	}
+	const serviceItems = document.querySelectorAll('.item-service');
+	if (serviceItems.length) { // Вказуємо склас потрібного слайдера
+		serviceItems.forEach(service => {
+			const serviceSlider = service.querySelector('.item-service__slider');
+			const serviceSliderThumbs = service.querySelector('.item-service__slider_thumbs');
+			if (serviceSlider && serviceSliderThumbs) {
+				const serviceItemThumbs = new Swiper(serviceSliderThumbs, {
+					modules: [Navigation],
+					observer: true,
+					observeParents: true,
+					slidesPerView: 4,
+					spaceBetween: 5,
+					//autoHeight: true,
+					speed: 800,
+
+					//touchRatio: 0,
+					//simulateTouch: false,
+					loop: true,
+					//preloadImages: false,
+					lazy: true,
+				});
+				new Swiper(serviceSlider, { // Вказуємо склас потрібного слайдера
+					// Підключаємо модулі слайдера
+					// для конкретного випадку
+					modules: [Navigation, Thumbs],
+					observer: true,
+					observeParents: true,
+					slidesPerView: 1,
+					spaceBetween: 20,
+					//autoHeight: true,
+					speed: 800,
+
+					//touchRatio: 0,
+					//simulateTouch: false,
+					loop: true,
+					//preloadImages: false,
+					lazy: true,
+					thumbs: {
+						swiper: serviceItemThumbs
+					},
+				});
+			}
+
+		})
+
+
 	}
 }
 // Скролл на базі слайдера (за класом swiper scroll для оболонки слайдера)
