@@ -4,11 +4,1839 @@
 "title":"Прайс(категория)"
 })
 
-<body>
+<body class="price">
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="page">
 			@@include('html/_crumbs.htm',{})
+			<div class="price__container">
+				<h1 class="price__title">Прайс с ценами на товары / услуги</h1>
+				<section class="price__intro intro-price">
+					<div class="intro-price__list">
+						<div class="intro-price__item item-intro-price">
+							<h3 class="item-intro-price__title">Нужна помощь?</h3>
+							<div class="item-intro-price__text"><a href="#">Консультация</a> – мы можем помочь в
+								подборенеобходимой
+								продукции, также разобраться в их нюансах и тонкостях. Звоните по горячему номеру
+								телефона или заполните заявку, и мы вам перезвоним в ближайшее время.</div>
+							<button type="button" class="item-intro-price__button button" data-popup="#callback">Хочу
+								консультацию</button>
+						</div>
+						<div class="intro-price__item item-intro-price">
+							<h3 class="item-intro-price__title">Нужен проект?</h3>
+							<div class="item-intro-price__text"><a href="#">Проектирование</a> – наши инженеры
+								помогут
+								вам с вашей задачей и спроектируют
+								необходимую конструкцию, которая нужна</div>
+							<button type="button" class="item-intro-price__button button" data-popup="#callback">Хочу
+								консультацию</button>
+						</div>
+						<div class="intro-price__item item-intro-price">
+							<h3 class="item-intro-price__title">Позвоните нам</h3>
+							<a href="tel:+79111670772" class="item-intro-price__phone">+7 (911) 167-07-72</a>
+							<div class="item-intro-price__social social-intro-price">
+								<div class="social-intro-price__list">
+									<a href="#" class="social-intro-price__item _icon-tg">tg</a>
+									<a href="#" class="social-intro-price__item _icon-wa">wa</a>
+								</div>
+								<div class="social-intro-price__text">Напишите нам в
+									удобный мессенджер</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" download class="intro-price__download download-intro-price">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px"
+							height="20px">
+							<path fill-rule="evenodd" fill="rgb(52, 155, 240)"
+								d="M15.675,16.069 L14.242,16.069 L14.242,18.416 C14.242,19.098 13.687,19.651 13.002,19.651 L1.237,19.651 C0.552,19.651 -0.004,19.098 -0.004,18.416 L-0.004,2.083 C-0.004,1.401 0.552,0.848 1.237,0.848 L13.002,0.848 C13.687,0.848 14.242,1.401 14.242,2.083 L14.242,9.413 L15.675,9.413 C16.360,9.413 16.915,9.966 16.915,10.648 L16.915,14.834 C16.915,15.516 16.360,16.069 15.675,16.069 ZM11.762,3.318 L2.477,3.318 L2.477,17.181 L11.762,17.181 L11.762,16.069 L9.281,16.069 C8.596,16.069 8.041,15.516 8.041,14.834 L8.041,10.648 C8.041,9.966 8.596,9.413 9.281,9.413 L11.762,9.413 L11.762,3.318 ZM14.434,11.883 L13.002,11.883 L10.521,11.883 L10.521,13.599 L13.002,13.599 L14.434,13.599 L14.434,11.883 Z" />
+						</svg>
+						<span>Общий прайс-лист в формате excel</span>
+						<span class="download-intro-price__filename">СКАЧАТЬ.xlsx</span>
+					</a>
+				</section>
+				<section class="price__list list-price">
+					<h2 class="list-price__title">Прайс с ценами на нашу продукцию</h2>
+					<!-- Группа каталога -->
+					<div data-spollers class="spollers list-price__catalog">
+						<div class="title-spollers__image">
+							<img data-src="@img/price-item.jpg" alt="price-item">
+						</div>
+						<details class="spollers__item list-price__category">
+							<summary class="spollers__title title-spollers">
+								Газовые технологии
+							</summary>
+							<div class="spollers__body">
+								<div data-spollers class="spollers list-price__subcategory">
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+								</div>
+							</div>
+						</details>
+					</div>
+					<!-- /. Группа каталога -->
+					<!-- Группа каталога -->
+					<div data-spollers class="spollers list-price__catalog">
+						<div class="title-spollers__image">
+							<img data-src="@img/price-item.jpg" alt="price-item">
+						</div>
+						<details class="spollers__item list-price__category">
+							<summary class="spollers__title title-spollers">
+								Газовые технологии
+							</summary>
+							<div class="spollers__body">
+								<div data-spollers class="spollers list-price__subcategory">
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+								</div>
+							</div>
+						</details>
+					</div>
+					<!-- /. Группа каталога -->
+					<!-- Группа каталога -->
+					<div data-spollers class="spollers list-price__catalog">
+						<div class="title-spollers__image">
+							<img data-src="@img/price-item.jpg" alt="price-item">
+						</div>
+						<details class="spollers__item list-price__category">
+							<summary class="spollers__title title-spollers">
+								Газовые технологии
+							</summary>
+							<div class="spollers__body">
+								<div data-spollers class="spollers list-price__subcategory">
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+								</div>
+							</div>
+						</details>
+					</div>
+					<!-- /. Группа каталога -->
+				</section>
+				<section class="price__list list-price">
+					<h2 class="list-price__title">Прайс с ценами на наши услуги</h2>
+					<!-- Группа каталога -->
+					<div data-spollers class="spollers list-price__catalog">
+						<div class="title-spollers__image">
+							<img data-src="@img/price-item.jpg" alt="price-item">
+						</div>
+						<details class="spollers__item list-price__category">
+							<summary class="spollers__title title-spollers">
+								Газовые технологии
+							</summary>
+							<div class="spollers__body">
+								<div data-spollers class="spollers list-price__subcategory">
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+								</div>
+							</div>
+						</details>
+					</div>
+					<!-- /. Группа каталога -->
+					<!-- Группа каталога -->
+					<div data-spollers class="spollers list-price__catalog">
+						<div class="title-spollers__image">
+							<img data-src="@img/price-item.jpg" alt="price-item">
+						</div>
+						<details class="spollers__item list-price__category">
+							<summary class="spollers__title title-spollers">
+								Газовые технологии
+							</summary>
+							<div class="spollers__body">
+								<div data-spollers class="spollers list-price__subcategory">
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+									<!-- Подгруппа каталога -->
+									<details class="spollers__item">
+										<summary class="spollers__title">Технологическое газоснабжение</summary>
+										<div class="spollers__body">
+											<div data-spollers class="spollers list-price__products products-price">
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+												<!-- Подгруппа каталога ур.2 -->
+												<details class="spollers__item products-price__item">
+													<summary class="spollers__title products-price__title">Газобаллонные
+														шкафы</summary>
+													<div class="spollers__body products-price__list">
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+														<!-- товар -->
+														<div class="products-price__item item-products-price">
+															<div class="item-products-price__thumb">
+																<img data-src="@img/product-thumb.jpg"
+																	alt="product-thumb">
+															</div>
+															<a href="#" class="item-products-price__title">Шкафы для
+																тех. газов</a>
+															<div class="item-products-price__excerpt">Короткое описание
+																рекомендованной услуги</div>
+															<div class="item-products-price__price">от 30 000 руб.</div>
+															<a href="#" class="item-products-price__link">
+																<span>Подробнее</span>
+																<svg xmlns="http://www.w3.org/2000/svg"
+																	xmlns:xlink="http://www.w3.org/1999/xlink"
+																	width="56px" height="5px">
+																	<image x="0px" y="0px" width="56px" height="5px"
+																		xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+																</svg>
+															</a>
+														</div>
+														<!-- /. товар -->
+													</div>
+												</details>
+												<!-- /. Подгруппа каталога ур.2 -->
+											</div>
+										</div>
+									</details>
+									<!-- /. Подгруппа каталога -->
+								</div>
+							</div>
+						</details>
+					</div>
+					<!-- /. Группа каталога -->
+				</section>
+			</div>
+			@@include('html/_callback.htm',{})
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>

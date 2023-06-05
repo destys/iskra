@@ -28,9 +28,6 @@
     // .intro__title
     &__title {
         @include adaptiveValue("margin-bottom", 24, 18);
-        font-weight: 700;
-        @include adaptiveValue("font-size", 53, 24);
-        color: $blue;
         text-transform: uppercase;
     }
     // .intro__subtitle

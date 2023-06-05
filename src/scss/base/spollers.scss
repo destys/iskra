@@ -15,11 +15,12 @@
 	width: 100%;
 	cursor: default;
 	text-align: left;
-	border: 1px solid #eee;
-	padding: rem(10) rem(15);
-	border-radius: rem(5);
 	position: relative;
 	list-style: none;
+	padding-right: rem(25);
+
+	transition: color 0.4s ease;
+
 	&::marker {
 	}
 	._spoller-init & {
@@ -30,23 +31,26 @@
 			position: absolute;
 			right: 10px;
 			top: 50%;
-			background-color: #000;
-			height: 2px;
-			width: 15px;
-			transition: transform 0.5s ease 0s;
+			background-color: $blue;
+			height: 3px;
+			width: 16px;
+			transition: transform 0.4s ease 0s, background 0.4s ease;
 		}
 		&::before {
-			transform: translate(-75%, -50%) rotate(40deg);
 		}
 		&::after {
-			transform: translate(0, -50%) rotate(-40deg);
+			transform: rotate(90deg);
 		}
 		&._spoller-active {
+			&::before,
+			&::after {
+				background-color: $red;
+			}
 			&::before {
-				transform: translateX(-75%) rotate(-40deg);
+				transform: rotate(45deg);
 			}
 			&::after {
-				transform: rotate(40deg);
+				transform: rotate(135deg);
 			}
 		}
 		/*
@@ -86,7 +90,4 @@
 }
 // Контент спойлера
 .spollers__body {
-	padding: rem(20);
-	border-radius: rem(5);
-	border: 1px solid #eee;
 }

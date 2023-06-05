@@ -6,6 +6,7 @@
     // .crumbs__list
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: rem(10);
     }
     // .crumbs__item
