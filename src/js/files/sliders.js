@@ -195,10 +195,44 @@ function initSliders() {
 					},
 				});
 			}
-
 		})
+	}
+	if (document.querySelector('.product__slider') && document.querySelector('.product__slider_thumbs')) {
+		const productThumbs = new Swiper('.product__slider_thumbs', {
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 5,
+			//autoHeight: true,
+			speed: 800,
 
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			lazy: true,
+		});
+		new Swiper('.product__slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation, Thumbs],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 20,
+			//autoHeight: true,
+			speed: 800,
 
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			lazy: true,
+			thumbs: {
+				swiper: productThumbs
+			},
+		});
 	}
 }
 // Скролл на базі слайдера (за класом swiper scroll для оболонки слайдера)

@@ -161,8 +161,10 @@ body {
 @import "crumbs";
 @import "sidebar";
 @import "service-item";
+@import "related";
 
 // Підключення стилів окремих сторінок
 @import "home";
 @import "price-category";
 @import "service";
+@import "product";

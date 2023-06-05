@@ -376,6 +376,7 @@
     }
     // .item-products-price__price
     &__price {
+        margin-right: rem(20);
         font-weight: 700;
         color: $blue;
         white-space: nowrap;

@@ -1,0 +1,16 @@
+.related {
+    @include adaptiveValue("margin-bottom", 60, 32);
+    
+    // .related__title
+    &__title {
+        @include adaptiveValue("margin-bottom", 32, 24);
+    }
+    // .related__excerpt
+    &__excerpt {
+        @include adaptiveValue("margin-bottom", 48, 32);
+    }
+    // .related__list
+    &__list {
+        @include gridCards("fill", rem(300), 1fr);
+    }
+}

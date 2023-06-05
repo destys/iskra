@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Товар Модификация"
+})
+
+<body class="product">
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            @@include('html/_crumbs.htm',{})
+            <div class="product__container">
+                <div class="product__inner">
+                    @@include('html/_sidebar.htm',{})
+                    <div class="product__content">
+                        <div class="product__top">
+                            <div class="product__gallery">
+                                <div class="product__slider swiper">
+                                    <div class="product__wrapper swiper-wrapper">
+                                        <div class="product__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="product">
+                                        </div>
+                                        <div class="product__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="product">
+                                        </div>
+                                        <div class="product__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="product">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__slider_thumbs swiper">
+                                    <div class="product__wrapper swiper-wrapper">
+                                        <div class="product__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="product">
+                                        </div>
+                                        <div class="product__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="product">
+                                        </div>
+                                        <div class="product__slide swiper-slide">
+                                            <img src="@img/product-image.jpg" alt="product">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info info-product">
+                                <div class="info-product__header header-product">
+                                    <div class="header-product__left">
+                                        <div class="header-product__sku"><span>Артикул: </span><span>1r3s5h</span></div>
+                                        <div class="header-product__price">от 35 000 р.</div>
+                                    </div>
+                                    <button type="button" class="header-product__button button">Заказать</button>
+                                </div>
+                                <div class="info-product__params params-product">
+                                    <div class="params-product__item">
+                                        <span>Радиус: </span><span>20мм</span>
+                                    </div>
+                                    <div class="params-product__item">
+                                        <span>Тип: </span><span>Накладной</span>
+                                    </div>
+                                    <div class="params-product__item">
+                                        <span>Радиус: </span><span>20мм</span>
+                                    </div>
+                                    <div class="params-product__item">
+                                        <span>Тип: </span><span>Накладной</span>
+                                    </div>
+                                </div>
+                                <div class="info-product__footer footer-product">
+                                    <div data-spollers class="spollers">
+                                        <details class="spollers__item">
+                                            <summary class="spollers__title">Срок поставки: 14 дней</summary>
+                                            <div class="spollers__body">
+                                                Запорный вентиль ВС-16 из нержавеющей стали 12Х18Н10Т
+                                                предназначен для установки на баллоны малого и среднего объёма для
+                                                чистых
+                                                и/или
+                                                агрессивных газов при Pp≤ 20 Мпа (200 кгс/см2) в качестве запорного
+                                                устройства.
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <a href="#modifications" class="footer-product__link-to-modifications">Смотреть
+                                        все модификации</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-tabs data-tabs-animate="500" class="info-product__tabs tabs">
+                    <nav data-tabs-titles class="tabs__navigation">
+                        <button type="button" class="tabs__title _tab-active">Тех. описание</button>
+                        <button type="button" class="tabs__title">Чертеж</button>
+                        <button type="button" class="tabs__title">Комплектация поставки</button>
+                        <button type="button" class="tabs__title">Гарантии</button>
+                        <button type="button" class="tabs__title">Опросный лист</button>
+                        <button type="button" class="tabs__title">Оплата и Доставка</button>
+                    </nav>
+                    <div data-tabs-body class="tabs__content">
+                        <div class="tabs__body">
+                            <p>На все поставляемое оборудование Компании «ISKRA Engineering» гарантия
+                                составляет от 12 месяцев. Возможно
+                                продление гарантии на срок до 36 месяцев, стоимость продления за каждые 12
+                                месяцев составляет от 30% до 40% стоимости оборудования. При возникновении
+                                гарантийного случая оборудование как правило заменяется на новое или брак
+                                устраняется за наш счёт, включая транспортные расходы. Восстановленное
+                                оборудование может быть предложено Заказчику со скидкой от 50% до 60%
+                                стоимости оборудования с гарантийным сроком эксплуатации 12 месяцев. Каждый
+                                гарантийный случай рассматривается индивидуально и наша Компании «ISKRA
+                                Engineering» отстаивает, в первую очередь.</p>
+                            <h2>Интересы заказчика</h2>
+                            <h3>Гарантийными являются случаи:</h3>
+                            <ul>
+                                <li>Наличие дефекта (заводского брака) при производстве оборудования.
+                                    Заказчик подтверждает наличие данных
+                                    дефектов фото и видео фиксацией при приемке оборудования до подписания
+                                    акта приема передачи.</li>
+                                <li>Потеря работоспособности в процессе эксплуатации оборудования в течение
+                                    гарантийного срока за исключением:
+                                    <ul>
+                                        <li>Несоблюдения Заказчиком требований инструкций по эксплуатации.
+                                        </li>
+                                        <li>Использования оборудования не по назначению.</li>
+                                    </ul>
+                                </li>
+                                <li>Внесения изменений в конструкцию.</li>
+                            </ul>
+                            <p>В гарантийном ремонте (замене) может быть отказано при отсутствии акта от
+                                Заказчика с указанием описания
+                                неисправности, времени возникновения неисправности, описания оборудования и
+                                технологического процесса, в
+                                котором эксплуатировалось оборудования от нашей компании.</p>
+                        </div>
+                        <div class="tabs__body">
+                            Здесь будет контент
+                        </div>
+                        <div class="tabs__body">
+                            Здесь будет контент
+                        </div>
+                        <div class="tabs__body">
+                            Здесь будет контент
+                        </div>
+                        <div class="tabs__body">
+                            Здесь будет контент
+                        </div>
+                        <div class="tabs__body">
+                            Здесь будет контент
+                        </div>
+                    </div>
+                </div>
+                <section class="price__intro intro-price">
+                    <div class="intro-price__list">
+                        <div class="intro-price__item item-intro-price">
+                            <h3 class="item-intro-price__title">Нужна помощь?</h3>
+                            <div class="item-intro-price__text"><a href="#">Консультация</a> – мы можем
+                                помочь в
+                                подборенеобходимой
+                                продукции, также разобраться в их нюансах и тонкостях. Звоните по горячему
+                                номеру
+                                телефона или заполните заявку, и мы вам перезвоним в ближайшее время.</div>
+                            <button type="button" class="item-intro-price__button button" data-popup="#callback">Хочу
+                                консультацию</button>
+                        </div>
+                        <div class="intro-price__item item-intro-price">
+                            <h3 class="item-intro-price__title">Нужен проект?</h3>
+                            <div class="item-intro-price__text"><a href="#">Проектирование</a> – наши
+                                инженеры
+                                помогут
+                                вам с вашей задачей и спроектируют
+                                необходимую конструкцию, которая нужна</div>
+                            <button type="button" class="item-intro-price__button button" data-popup="#callback">Хочу
+                                консультацию</button>
+                        </div>
+                        <div class="intro-price__item item-intro-price">
+                            <h3 class="item-intro-price__title">Позвоните нам</h3>
+                            <a href="tel:+79111670772" class="item-intro-price__phone">+7 (911)
+                                167-07-72</a>
+                            <div class="item-intro-price__social social-intro-price">
+                                <div class="social-intro-price__list">
+                                    <a href="#" class="social-intro-price__item _icon-tg">tg</a>
+                                    <a href="#" class="social-intro-price__item _icon-wa">wa</a>
+                                </div>
+                                <div class="social-intro-price__text">Напишите нам в
+                                    удобный мессенджер</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="info-product__modifications modifications-product" id="modifications">
+                    <h2 class="modifications-product__title">Модификация</h2>
+                    <table class="modifications-product__table">
+                        <tr>
+                            <td>Наименование</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td class="modifications-product__price">от 30 000 руб.</td>
+                            <td>
+                                <button class="modifications-product__link" data-popup="#callback">
+                                    <span>Заказать</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="56px" height="5px">
+                                        <image x="0px" y="0px" width="56px" height="5px"
+                                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Наименование</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td class="modifications-product__price">от 30 000 руб.</td>
+                            <td>
+                                <button class="modifications-product__link" data-popup="#callback">
+                                    <span>Заказать</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="56px" height="5px">
+                                        <image x="0px" y="0px" width="56px" height="5px"
+                                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Наименование</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td class="modifications-product__price">от 30 000 руб.</td>
+                            <td>
+                                <button class="modifications-product__link" data-popup="#callback">
+                                    <span>Заказать</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="56px" height="5px">
+                                        <image x="0px" y="0px" width="56px" height="5px"
+                                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Наименование</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td class="modifications-product__price">от 30 000 руб.</td>
+                            <td>
+                                <button class="modifications-product__link" data-popup="#callback">
+                                    <span>Заказать</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="56px" height="5px">
+                                        <image x="0px" y="0px" width="56px" height="5px"
+                                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Наименование</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td class="modifications-product__price">от 30 000 руб.</td>
+                            <td>
+                                <button class="modifications-product__link" data-popup="#callback">
+                                    <span>Заказать</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="56px" height="5px">
+                                        <image x="0px" y="0px" width="56px" height="5px"
+                                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Наименование</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td class="modifications-product__price">от 30 000 руб.</td>
+                            <td>
+                                <button class="modifications-product__link" data-popup="#callback">
+                                    <span>Заказать</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="56px" height="5px">
+                                        <image x="0px" y="0px" width="56px" height="5px"
+                                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Наименование</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td>Хар ка модификации</td>
+                            <td class="modifications-product__price">от 30 000 руб.</td>
+                            <td>
+                                <button class="modifications-product__link" data-popup="#callback">
+                                    <span>Заказать</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="56px" height="5px">
+                                        <image x="0px" y="0px" width="56px" height="5px"
+                                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="info-product__related related-product">
+                    <h2 class="related-product__title">Сопутствующие услуги</h2>
+                    <div class="related-product__excerpt">Сопутствующие услуги ниже представлен список услуг
+                        относящийся к данной продукции. Закажите необходимую услугу или проконсультируйтесь
+                        с наш им специалистом, он подробно расскажет о каждой из услуг, также ответит на все
+                        ваши вопросы.</div>
+                    <div class="related-product__list">
+                        <!-- Продукт -->
+                        <div class="related-product__item item-related">
+                            <div class="item-related__thumb">
+                                <img src="@img/product-image.jpg" alt="product-image">
+                            </div>
+                            <a href="#" class="item-related__title">Шкафы для тех. газов</a>
+                            <div class="item-related__excerpt">Короткое описание рекомендованной услуги
+                            </div>
+                            <div class="item-related__price">от 30 000 руб.</div>
+                            <a href="#" class="item-related__link">
+                                <span>Подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="56px" height="5px">
+                                    <image x="0px" y="0px" width="56px" height="5px"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- /. Продукт -->
+                        <!-- Продукт -->
+                        <div class="related-product__item item-related">
+                            <div class="item-related__thumb">
+                                <img src="@img/product-image.jpg" alt="product-image">
+                            </div>
+                            <a href="#" class="item-related__title">Шкафы для тех. газов</a>
+                            <div class="item-related__excerpt">Короткое описание рекомендованной услуги
+                            </div>
+                            <div class="item-related__price">от 30 000 руб.</div>
+                            <a href="#" class="item-related__link">
+                                <span>Подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="56px" height="5px">
+                                    <image x="0px" y="0px" width="56px" height="5px"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- /. Продукт -->
+                        <!-- Продукт -->
+                        <div class="related-product__item item-related">
+                            <div class="item-related__thumb">
+                                <img src="@img/product-image.jpg" alt="product-image">
+                            </div>
+                            <a href="#" class="item-related__title">Шкафы для тех. газов</a>
+                            <div class="item-related__excerpt">Короткое описание рекомендованной услуги
+                            </div>
+                            <div class="item-related__price">от 30 000 руб.</div>
+                            <a href="#" class="item-related__link">
+                                <span>Подробнее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="56px" height="5px">
+                                    <image x="0px" y="0px" width="56px" height="5px"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAFAgMAAABtDMf+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEX////uRkbuRkb///+HbSX1AAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH5wYCEBA7BTPktAAAABtJREFUCNdjYEAGKig8Bk2GVSiAIRQZZKJyUwH5shMKUopaHQAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- /. Продукт -->
+                    </div>
+                </div>
+                @@include('html/_related.htm',{})
+            </div>
+            @@include('html/_callback.htm',{})
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -4,7 +4,7 @@
         box-sizing: border-box;
     }
     // .service__wrapper
-    &__wrapper {
+    &__wrapper { 
         display: grid;
         grid-template-columns: rem(280) 1fr;
         gap: rem(30);
@@ -54,10 +54,6 @@
         @media (min-width: $tablet) {
             padding: rem(80) rem(30);
         }
-    }
-    // .service__others
-    &__others {
-        @include adaptiveValue("margin-bottom", 50, 32);
     }
 }
 .featured-service {
