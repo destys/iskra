@@ -1,0 +1,11 @@
+.textpage {
+
+    // .textpage__container
+    &__container {
+    }
+    // .textpage__content
+    &__content {
+        margin-bottom: rem(50);
+        @extend %textSettings;
+    }
+}

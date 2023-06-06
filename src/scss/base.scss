@@ -3,7 +3,7 @@
 @import "base/forms/forms";
 
 // Стилі попапів
-// @import "base/popup";
+@import "base/popup";
 
 // Стилі спойлерів
 @import "base/spollers";
@@ -135,5 +135,76 @@
 %hidescroll {
 	&::-webkit-scrollbar {
 		display: none;
+	}
+}
+
+%textSettings {
+	h2 {
+		margin-bottom: rem(30);
+		@include adaptiveValue("margin-bottom", 30, 18);
+	}
+	h3 {
+		margin-bottom: rem(18);
+		@include adaptiveValue("font-size", 18, 14);
+	}
+	p,
+	ul,
+	ol,
+	div {
+		&:not(:last-child) {
+			margin-bottom: rem(18);
+		}
+	}
+
+	ul {
+		li {
+			&:not(:last-child) {
+				margin-bottom: rem(9);
+			}
+
+			ul,
+			ol {
+				margin: rem(9) 0;
+				padding-left: rem(18);
+
+				li {
+					list-style: none;
+
+					&::before {
+						content: "—";
+						display: inline-block;
+						margin-right: rem(10);
+						color: $mainColor;
+					}
+				}
+			}
+		}
+	}
+
+	ol {
+		li {
+			list-style: inside auto;
+
+			&:not(:last-child) {
+				margin-bottom: rem(9);
+			}
+
+			ul,
+			ol {
+				margin: rem(9) 0;
+				padding-left: rem(18);
+
+				li {
+					list-style: none;
+
+					&::before {
+						content: "—";
+						display: inline-block;
+						margin-right: rem(10);
+						color: $mainColor;
+					}
+				}
+			}
+		}
 	}
 }

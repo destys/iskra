@@ -1,9 +1,33 @@
-<div id="popup" aria-hidden="true" class="popup">
+<div id="callback" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрити</button>
+			<button data-close type="button" class="popup__close">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px"
+					height="19px">
+					<path fill-rule="evenodd" fill="rgb(52, 155, 240)"
+						d="M18.692,16.571 L16.571,18.692 L9.500,11.621 L2.429,18.692 L0.308,16.571 L7.379,9.500 L0.308,2.429 L2.429,0.308 L9.500,7.379 L16.571,0.308 L18.692,2.429 L11.621,9.500 L18.692,16.571 Z" />
+				</svg>
+			</button>
 			<div class="popup__text">
-				Text
+				<div class="popup__title">Заказать
+					обратный звонок</div>
+				<div class="popup__subtitle">Заполните форму обратной связи и мы
+					свяжемся с вами в ближайшее время!</div>
+				<form action="#" class="popup__form form">
+					<div class="form__row">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя"
+							class="input">
+					</div>
+					<div class="form__row">
+						<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Ваш телефон"
+							class="input">
+					</div>
+					<button type="submit" class="button">Заказать звонок</button>
+					<div class="form__privacy">
+						Отправляя запрос Вы соглашаетесь на обработку персональных данных. <br />
+						Данные не передаются третьим лицам
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>

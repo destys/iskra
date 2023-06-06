@@ -26,6 +26,10 @@
             flex-direction: row;
         }
     }
+    // .product__description
+    &__description {
+        @extend %textSettings;
+    }
     // .product__content
     &__content {
     }
@@ -89,23 +93,40 @@
         @include gridCards("fill", rem(150), 1fr);
         border-bottom: 1px solid #d4e9f2;
     }
+    // .info-product__excerpt
+    &__excerpt {
+        @extend %textSettings;
+
+        margin-bottom: rem(20);
+        padding-bottom: rem(20);
+
+        border-bottom: 1px solid #d4e9f2;
+    }
     // .info-product__footer
     &__footer {
         display: flex;
-        gap: rem(30);
+        flex-direction: column;
+        gap: rem(15);
+
+        @media (min-width: $mobile) {
+            flex-direction: row;
+            gap: rem(30);
+        }
 
         .spollers {
+            position: relative;
             flex: 1 1 auto;
             // .spollers__item
             &__item {
                 font-size: rem(14);
-                border: 1px solid #d4e9f2;
-                border-radius: 8px;
             }
             // .spollers__title
             &__title {
                 padding: rem(15);
                 font-weight: 500;
+
+                border: 1px solid #d4e9f2;
+                border-radius: 8px;
 
                 &::before,
                 &::after {
@@ -126,6 +147,9 @@
                 }
 
                 &._spoller-active {
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-bottom: 0;
                     &::after {
                         transform: rotate(-180deg);
                     }
@@ -135,6 +159,14 @@
             &__body {
                 padding: rem(15);
                 padding-top: 0;
+                position: absolute;
+                z-index: 1;
+                background-color: #fff;
+
+                border: 1px solid #d4e9f2;
+                border-top: 0;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
             }
         }
     }
@@ -188,44 +220,7 @@
             }
             // .tabs__body
             &__body {
-                h2 {
-                    margin-bottom: rem(30);
-                    @include adaptiveValue("margin-bottom", 30, 18);
-                }
-                h3 {
-                    margin-bottom: rem(18);
-                    @include adaptiveValue("font-size", 18, 14);
-                }
-                p,
-                ul {
-                    &:not(:last-child) {
-                        margin-bottom: rem(18);
-                    }
-                }
-
-                ul {
-                    li {
-                        &:not(:last-child) {
-                            margin-bottom: rem(9);
-                        }
-
-                        ul {
-                            margin: rem(9) 0;
-                            padding-left: rem(18);
-
-                            li {
-                                list-style: none;
-
-                                &::before {
-                                    content: "—";
-                                    display: inline-block;
-                                    margin-right: rem(10);
-                                    color: $mainColor;
-                                }
-                            }
-                        }
-                    }
-                }
+                @extend %textSettings;
             }
         }
     }
@@ -272,9 +267,12 @@
 .footer-product {
     // .footer-product__link-to-modifications
     &__link-to-modifications {
-        flex: 0 0 rem(134);
         color: $blue;
         text-decoration: underline;
+
+        @media (min-width: $mobile) {
+            flex: 0 0 rem(134);
+        }
     }
 }
 .modifications-product {
@@ -292,6 +290,30 @@
 
         td {
             padding: rem(10) rem(5);
+        }
+
+        @media (max-width: $tablet) {
+            display: block;
+
+            tr {
+                display: flex;
+                flex-wrap: wrap;
+                gap: rem(10);
+            }
+        }
+
+        @media (max-width: $mobile) {
+            tbody {
+                @include gridCards("fill", rem(150), 1fr, rem(20));
+            }
+            tr {
+                padding-bottom: rem(10);
+                flex-direction: column;
+            }
+
+            td {
+                padding: 0;
+            }
         }
     }
     // .modifications-product__price
