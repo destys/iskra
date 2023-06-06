@@ -4,6 +4,11 @@
     min-height: rem(450);
     background: url("@img/cb-bg.jpg") 0 0 no-repeat;
     background-size: cover !important;
+
+    .home & {
+        margin-bottom: rem(50);
+    }
+    
     // .callback__container
     &__container {
         width: 100%;
