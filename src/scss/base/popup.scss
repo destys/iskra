@@ -47,15 +47,73 @@ body::after {
 	align-items: center;
 }
 .popup__content {
+	display: flex;
+	flex-direction: column;
+
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
+	background-color: #fff;
 	padding: 20px;
 	width: 100%;
-	max-width: 900px;
-	border-radius: 20px;
+	max-width: 616px;
+	border-radius: 10px;
 	.lock & {
 		visibility: visible;
+	}
+}
+
+.popup {
+	// .popup__close
+	&__close {
+		margin-left: auto;
+	}
+	// .popup__text
+	&__text {
+	}
+	// .popup__title
+	&__title {
+		margin-bottom: rem(24);
+		font-weight: 600;
+		@include adaptiveValue("font-size", 42, 28);
+		color: $blue;
+		text-align: center;
+	}
+	// .popup__subtitle
+	&__subtitle {
+		margin: 0 auto rem(32);
+		font-weight: 500;
+		font-size: rem(16);
+		text-align: center;
+	}
+	// .popup__form
+	&__form {
+		display: flex;
+		flex-direction: column;
+
+		.form {
+			// .form__row
+			&__row {
+				margin-bottom: rem(10);
+			}
+			// .form__privacy
+			&__privacy {
+				font-weight: 300;
+				text-align: center;
+			}
+		}
+		.input {
+			width: 100%;
+			padding: rem(23) rem(17);
+			border: 1px solid #ddedf5;
+			border-radius: 10px;
+
+			font-weight: 500;
+		}
+		.button {
+			margin-top: rem(15);
+			margin-bottom: rem(18);
+			align-self: center;
+		}
 	}
 }
