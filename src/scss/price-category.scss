@@ -295,6 +295,7 @@
 .products-price {
     // .products-price__title
     &__title {
+        font-size: rem(16);
     }
     // .products-price__list
     &__list {
@@ -367,7 +368,7 @@
         }
 
         @media (min-width: $tablet) {
-            display: block;
+            display: block !important;
             max-width: rem(350);
             white-space: nowrap;
             overflow: hidden;
