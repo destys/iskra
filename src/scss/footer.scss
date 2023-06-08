@@ -41,12 +41,17 @@
         &:not(:last-child) {
             margin-bottom: rem(40);
         }
+
+        a.menu__title:hover {
+            color: $red;
+        }
         .menu {
             // .menu__body
             &__body {
             }
             // .menu__title
             &__title {
+                display: block;
                 margin-bottom: rem(10);
                 font-weight: 600;
                 font-size: rem(16);

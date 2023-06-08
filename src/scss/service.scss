@@ -4,7 +4,7 @@
         box-sizing: border-box;
     }
     // .service__wrapper
-    &__wrapper { 
+    &__wrapper {
         display: grid;
         grid-template-columns: rem(280) 1fr;
         gap: rem(30);
@@ -126,6 +126,7 @@
     }
     // .featured-service__button
     &__button {
+        padding: rem(15) rem(45);
     }
 }
 .header-featured-service {
@@ -143,6 +144,7 @@
     }
     // .header-featured-service__button
     &__button {
+        padding: rem(15) rem(45);
     }
 }
 .group-service {

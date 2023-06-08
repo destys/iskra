@@ -2,13 +2,14 @@
     display: flex;
     align-items: center;
     min-height: rem(450);
-    background: url("@img/cb-bg.jpg") 0 0 no-repeat;
+    background: url("@img/cb-bg-page.jpg") 0 0 no-repeat;
     background-size: cover !important;
 
     .home & {
         margin-bottom: rem(50);
+        background: url("@img/cb-bg.jpg") 0 0 no-repeat;
     }
-    
+
     // .callback__container
     &__container {
         width: 100%;
@@ -74,8 +75,9 @@
         }
 
         a {
+            transition: color 0.2s ease;
             &._icon-wa {
-                color: green;
+                color: #43bc5e;
             }
             &:not(:last-child) {
                 font-size: 0;
@@ -85,10 +87,8 @@
                 }
             }
 
-            @media (any-hover: hover) {
-                &:hover {
-                    color: $red;
-                }
+            &:hover {
+                color: $red;
             }
         }
 

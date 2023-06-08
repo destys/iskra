@@ -88,9 +88,8 @@
     // .info-product__params
     &__params {
         margin-bottom: rem(24);
-        padding: 0 rem(40);
         @include adaptiveValue("padding-bottom", 70, 32);
-        @include gridCards("fill", rem(150), 1fr);
+        @include gridCards("fill", rem(200), 1fr);
         border-bottom: 1px solid #d4e9f2;
     }
     // .info-product__excerpt
@@ -230,6 +229,7 @@
         padding: rem(62) rem(30);
         box-shadow: 0px 23px 62px 0px rgba(211, 231, 240, 0.9);
         border-radius: 10px;
+        background: url("@img/modif-lines.png") top right no-repeat;
     }
     // .info-product__related
     &__related {
@@ -251,6 +251,7 @@
     }
     // .header-product__button
     &__button {
+        padding: rem(15) rem(45);
     }
 }
 .params-product {
@@ -286,6 +287,12 @@
         width: 100%;
         tr {
             border-bottom: 1px solid #e7f2f7;
+
+            transition: background 0.4s ease;
+
+            &:hover {
+                background: rgba(#e7f2f7, 0.5);
+            }
         }
 
         td {

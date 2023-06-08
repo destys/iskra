@@ -13,19 +13,21 @@
                 <div class="product__inner">
                     @@include('html/_sidebar.htm',{})
                     <div class="product__content">
+                        <h1 class="product__title">Баллонный вентиль ВС-16 из <br />
+                            нержавеющей стали</h1>
                         <div class="product__top">
                             <div class="product__gallery">
                                 <div class="product__slider swiper">
-                                    <div class="product__wrapper swiper-wrapper">
-                                        <div class="product__slide swiper-slide">
+                                    <div class="product__wrapper swiper-wrapper" data-gallery>
+                                        <a href="@img/product-image.jpg" class="product__slide swiper-slide">
                                             <img src="@img/product-image.jpg" alt="product">
-                                        </div>
-                                        <div class="product__slide swiper-slide">
+                                        </a>
+                                        <a href="@img/product-image.jpg" class="product__slide swiper-slide">
                                             <img src="@img/product-image.jpg" alt="product">
-                                        </div>
-                                        <div class="product__slide swiper-slide">
+                                        </a>
+                                        <a href="@img/product-image.jpg" class="product__slide swiper-slide">
                                             <img src="@img/product-image.jpg" alt="product">
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="product__slider_thumbs swiper">
@@ -83,66 +85,160 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div data-tabs data-tabs-animate="500" class="info-product__tabs tabs">
-                    <nav data-tabs-titles class="tabs__navigation">
-                        <button type="button" class="tabs__title _tab-active">Тех. описание</button>
-                        <button type="button" class="tabs__title">Чертеж</button>
-                        <button type="button" class="tabs__title">Комплектация поставки</button>
-                        <button type="button" class="tabs__title">Гарантии</button>
-                        <button type="button" class="tabs__title">Опросный лист</button>
-                        <button type="button" class="tabs__title">Оплата и Доставка</button>
-                    </nav>
-                    <div data-tabs-body class="tabs__content">
-                        <div class="tabs__body">
-                            <p>На все поставляемое оборудование Компании «ISKRA Engineering» гарантия
-                                составляет от 12 месяцев. Возможно
-                                продление гарантии на срок до 36 месяцев, стоимость продления за каждые 12
-                                месяцев составляет от 30% до 40% стоимости оборудования. При возникновении
-                                гарантийного случая оборудование как правило заменяется на новое или брак
-                                устраняется за наш счёт, включая транспортные расходы. Восстановленное
-                                оборудование может быть предложено Заказчику со скидкой от 50% до 60%
-                                стоимости оборудования с гарантийным сроком эксплуатации 12 месяцев. Каждый
-                                гарантийный случай рассматривается индивидуально и наша Компании «ISKRA
-                                Engineering» отстаивает, в первую очередь.</p>
-                            <h2>Интересы заказчика</h2>
-                            <h3>Гарантийными являются случаи:</h3>
-                            <ul>
-                                <li>Наличие дефекта (заводского брака) при производстве оборудования.
-                                    Заказчик подтверждает наличие данных
-                                    дефектов фото и видео фиксацией при приемке оборудования до подписания
-                                    акта приема передачи.</li>
-                                <li>Потеря работоспособности в процессе эксплуатации оборудования в течение
-                                    гарантийного срока за исключением:
+                        <div data-tabs data-tabs-animate="500" class="info-product__tabs tabs">
+                            <nav data-tabs-titles class="tabs__navigation">
+                                <button type="button" class="tabs__title _tab-active">Тех. описание</button>
+                                <button type="button" class="tabs__title">Чертеж</button>
+                                <button type="button" class="tabs__title">Комплектация поставки</button>
+                                <button type="button" class="tabs__title">Гарантии</button>
+                                <button type="button" class="tabs__title">Опросный лист</button>
+                                <button type="button" class="tabs__title">Оплата и Доставка</button>
+                            </nav>
+                            <div data-tabs-body class="tabs__content">
+                                <div class="tabs__body">
+                                    <p>На все поставляемое оборудование Компании «ISKRA Engineering» гарантия
+                                        составляет от 12 месяцев. Возможно
+                                        продление гарантии на срок до 36 месяцев, стоимость продления за каждые 12
+                                        месяцев составляет от 30% до 40% стоимости оборудования. При возникновении
+                                        гарантийного случая оборудование как правило заменяется на новое или брак
+                                        устраняется за наш счёт, включая транспортные расходы. Восстановленное
+                                        оборудование может быть предложено Заказчику со скидкой от 50% до 60%
+                                        стоимости оборудования с гарантийным сроком эксплуатации 12 месяцев. Каждый
+                                        гарантийный случай рассматривается индивидуально и наша Компании «ISKRA
+                                        Engineering» отстаивает, в первую очередь.</p>
+                                    <h2>Интересы заказчика</h2>
+                                    <h3>Гарантийными являются случаи:</h3>
                                     <ul>
-                                        <li>Несоблюдения Заказчиком требований инструкций по эксплуатации.
+                                        <li>Наличие дефекта (заводского брака) при производстве оборудования.
+                                            Заказчик подтверждает наличие данных
+                                            дефектов фото и видео фиксацией при приемке оборудования до подписания
+                                            акта приема передачи.</li>
+                                        <li>Потеря работоспособности в процессе эксплуатации оборудования в течение
+                                            гарантийного срока за исключением:
+                                            <ul>
+                                                <li>Несоблюдения Заказчиком требований инструкций по эксплуатации.
+                                                </li>
+                                                <li>Использования оборудования не по назначению.</li>
+                                            </ul>
                                         </li>
-                                        <li>Использования оборудования не по назначению.</li>
+                                        <li>Внесения изменений в конструкцию.</li>
                                     </ul>
-                                </li>
-                                <li>Внесения изменений в конструкцию.</li>
-                            </ul>
-                            <p>В гарантийном ремонте (замене) может быть отказано при отсутствии акта от
-                                Заказчика с указанием описания
-                                неисправности, времени возникновения неисправности, описания оборудования и
-                                технологического процесса, в
-                                котором эксплуатировалось оборудования от нашей компании.</p>
-                        </div>
-                        <div class="tabs__body">
-                            Здесь будет контент
-                        </div>
-                        <div class="tabs__body">
-                            Здесь будет контент
-                        </div>
-                        <div class="tabs__body">
-                            Здесь будет контент
-                        </div>
-                        <div class="tabs__body">
-                            Здесь будет контент
-                        </div>
-                        <div class="tabs__body">
-                            Здесь будет контент
+                                    <p>В гарантийном ремонте (замене) может быть отказано при отсутствии акта от
+                                        Заказчика с указанием описания
+                                        неисправности, времени возникновения неисправности, описания оборудования и
+                                        технологического процесса, в
+                                        котором эксплуатировалось оборудования от нашей компании.</p>
+                                </div>
+                                <div class="tabs__body">
+                                    <!-- Обязательный элемент и класс -->
+                                    <div class="table-wrapper">
+                                        <!-- Обязательный элемент и класс -->
+                                        <table class="fl-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Header 1</th>
+                                                    <th>Header 2</th>
+                                                    <th>Header 3</th>
+                                                    <th>Header 4</th>
+                                                    <th>Header 5</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Content 1</td>
+                                                    <td>Content 1</td>
+                                                    <td>Content 1</td>
+                                                    <td>Content 1</td>
+                                                    <td>Content 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Content 2</td>
+                                                    <td>Content 2</td>
+                                                    <td>Content 2</td>
+                                                    <td>Content 2</td>
+                                                    <td>Content 2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Content 3</td>
+                                                    <td>Content 3</td>
+                                                    <td>Content 3</td>
+                                                    <td>Content 3</td>
+                                                    <td>Content 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Content 4</td>
+                                                    <td>Content 4</td>
+                                                    <td>Content 4</td>
+                                                    <td>Content 4</td>
+                                                    <td>Content 4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Content 5</td>
+                                                    <td>Content 5</td>
+                                                    <td>Content 5</td>
+                                                    <td>Content 5</td>
+                                                    <td>Content 5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Content 6</td>
+                                                    <td>Content 6</td>
+                                                    <td>Content 6</td>
+                                                    <td>Content 6</td>
+                                                    <td>Content 6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Content 7</td>
+                                                    <td>Content 7</td>
+                                                    <td>Content 7</td>
+                                                    <td>Content 7</td>
+                                                    <td>Content 7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Content 8</td>
+                                                    <td>Content 8</td>
+                                                    <td>Content 8</td>
+                                                    <td>Content 8</td>
+                                                    <td>Content 8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Content 9</td>
+                                                    <td>Content 9</td>
+                                                    <td>Content 9</td>
+                                                    <td>Content 9</td>
+                                                    <td>Content 9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Content 10</td>
+                                                    <td>Content 10</td>
+                                                    <td>Content 10</td>
+                                                    <td>Content 10</td>
+                                                    <td>Content 10</td>
+                                                </tr>
+                                            <tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tabs__body">
+                                    Здесь будет контент
+                                </div>
+                                <div class="tabs__body">
+                                    Здесь будет контент
+                                </div>
+                                <div class="tabs__body">
+                                    <a href="#" download class="intro-price__download download-intro-price">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(52, 155, 240)"
+                                                d="M15.675,16.069 L14.242,16.069 L14.242,18.416 C14.242,19.098 13.687,19.651 13.002,19.651 L1.237,19.651 C0.552,19.651 -0.004,19.098 -0.004,18.416 L-0.004,2.083 C-0.004,1.401 0.552,0.848 1.237,0.848 L13.002,0.848 C13.687,0.848 14.242,1.401 14.242,2.083 L14.242,9.413 L15.675,9.413 C16.360,9.413 16.915,9.966 16.915,10.648 L16.915,14.834 C16.915,15.516 16.360,16.069 15.675,16.069 ZM11.762,3.318 L2.477,3.318 L2.477,17.181 L11.762,17.181 L11.762,16.069 L9.281,16.069 C8.596,16.069 8.041,15.516 8.041,14.834 L8.041,10.648 C8.041,9.966 8.596,9.413 9.281,9.413 L11.762,9.413 L11.762,3.318 ZM14.434,11.883 L13.002,11.883 L10.521,11.883 L10.521,13.599 L13.002,13.599 L14.434,13.599 L14.434,11.883 Z" />
+                                        </svg>
+                                        <span>Название файла</span>
+                                        <span class="download-intro-price__filename">СКАЧАТЬ.xlsx</span>
+                                    </a>
+                                </div>
+                                <div class="tabs__body">
+                                    Здесь будет контент
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

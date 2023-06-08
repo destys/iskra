@@ -17,6 +17,7 @@
     &__content {
         padding-top: rem(120);
         @include adaptiveValue("padding-top", 120, 30);
+        @include adaptiveValue("padding-left", 70, 15, 0, 1920, 1335);
         max-width: rem(600);
     }
     // .intro__top-title
@@ -28,6 +29,7 @@
     // .intro__title
     &__title {
         @include adaptiveValue("margin-bottom", 24, 18);
+        @include adaptiveValue("font-size", 53, 24);
         text-transform: uppercase;
     }
     // .intro__subtitle
@@ -109,7 +111,6 @@
     margin-bottom: rem(65);
     // .directions__container
     &__container {
-        border-radius: 10px;
         position: relative;
         overflow: hidden;
 
@@ -122,6 +123,12 @@
 
             width: 50%;
             height: 100%;
+        }
+
+        @media (min-width: $pc) {
+            border: 1px solid #ddedf5;
+            padding: rem(65) rem(45);
+            border-radius: 10px;
         }
     }
     // .directions__title
@@ -213,7 +220,7 @@
         border-radius: 10px;
         overflow: hidden;
         background-color: #fff;
-        box-shadow: 0px 6px 9px 0px rgba(176, 206, 220, 0.9);
+        box-shadow: 0px 4px 7px 0px rgba(176, 206, 220, 0.9);
         height: rem(100);
 
         img {
@@ -272,6 +279,7 @@
         @media (min-width: $pc) {
             border: 1px solid #ddedf5;
             padding: rem(65) rem(45);
+            border-radius: 10px;
         }
     }
     // .home-catalog__title
@@ -329,7 +337,17 @@
     }
     // .item-home-catalog__title
     &__title {
+        display: block;
         margin-bottom: rem(22);
+        font-weight: 500;
+        font-size: rem(18);
+        color: $blue;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $red;
+            }
+        }
     }
     // .item-home-catalog__links
     &__links {
@@ -349,11 +367,10 @@
 }
 //========================================================================================================================================================
 .services {
-    @include adaptiveValue("margin-bottom", 140, 50);
+    @include adaptiveValue("margin-bottom", 70, 32);
     // .services__container
     &__container {
         position: relative;
-        overflow: hidden;
 
         @media (min-width: $pc) {
             padding: rem(30);
@@ -389,7 +406,7 @@
     }
     // .services__list
     &__list {
-        @include gridCards("fit", rem(300), 1fr);
+        @include gridCards("fill", rem(300), 1fr);
         position: relative;
         z-index: 2;
     }
@@ -428,7 +445,8 @@
 .header-services {
     // .header-services__image
     &__image {
-        height: rem(335);
+        margin-top: rem(-70);
+        height: rem(385);
         border-radius: 10px;
         box-shadow: 0px 23px 62px 0px rgba(211, 231, 240, 0.9);
         overflow: hidden;
@@ -469,7 +487,7 @@
     // .item-services__image
     &__image {
         margin-bottom: rem(24);
-        height: rem(180);
+        height: rem(200);
 
         img {
             width: 100%;

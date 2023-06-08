@@ -11,7 +11,7 @@ a {
 h1 {
     margin-bottom: rem(21);
     font-weight: 700;
-    @include adaptiveValue("font-size", 53, 24);
+    @include adaptiveValue("font-size", 42, 24);
     color: $blue;
 }
 
