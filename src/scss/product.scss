@@ -434,7 +434,7 @@
         }
 
         @media (min-width: $tablet) {
-            display: block;
+            display: block !important;
             max-width: rem(350);
             white-space: nowrap;
             overflow: hidden;
