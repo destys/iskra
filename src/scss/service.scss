@@ -9,7 +9,7 @@
         grid-template-columns: rem(280) 1fr;
         gap: rem(30);
 
-        @include adaptiveValue("margin-bottom", 50, 20);
+        @include adaptiveValue("margin-bottom", 50, 40);
 
         @media (max-width: $mobile) {
             display: block;

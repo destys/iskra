@@ -21,15 +21,16 @@
         display: grid;
         gap: rem(15);
         @include adaptiveValue("margin-bottom", 60, 32);
-        padding: rem(55) rem(20) rem(40);
+        padding: rem(20) rem(20) rem(40);
 
-        background: url("@img/price-bg.png") 0 0 no-repeat;
+        background: url("@img/eba-bg-mob.jpg") center no-repeat;
         background-size: cover !important;
 
         border-radius: 10px;
         overflow: hidden;
 
         @media (min-width: $tablet) {
+            background: url("@img/price-bg.png") 0 0 no-repeat;
             display: flex;
             gap: rem(45);
             padding: rem(65) rem(27);

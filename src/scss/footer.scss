@@ -136,10 +136,10 @@
             color: $blue;
         }
     }
-    // .bottom-footer__social
+    // .center-footer__social
     &__social {
     }
-    // .bottom-footer__callback
+    // .center-footer__callback
     &__callback {
         padding: rem(14) rem(18);
 
@@ -148,7 +148,7 @@
         }
 
         @media (max-width: $mobile) {
-            display: inline-flex;
+            display: inline-flex !important;
         }
     }
 }
