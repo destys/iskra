@@ -38,14 +38,18 @@
     }
     // .top-footer__title
     &__title {
-        margin-bottom: rem(39);
+        @include adaptiveValue("margin-bottom", 39, 14);
         font-weight: 500;
-        font-size: rem(16);
+        font-size: rem(18);
+
+        @media (max-width: $mobileSmall) {
+            margin-top: rem(15);
+        }
     }
     // .top-footer__menu
     &__menu {
         &:not(:last-child) {
-            margin-bottom: rem(40);
+            @include adaptiveValue("margin-bottom", 40, 24);
         }
 
         a.menu__title:hover {

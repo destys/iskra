@@ -41,6 +41,10 @@
     // .service__group
     &__group {
         @include adaptiveValue("margin-bottom", 60, 32);
+
+        &:last-child {
+            @include adaptiveValue("margin-bottom", 20, 0);
+        }
     }
     // .service__help
     &__help {
