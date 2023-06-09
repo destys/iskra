@@ -259,7 +259,7 @@
 }
 //========================================================================================================================================================
 .home-catalog {
-    margin-bottom: rem(80);
+    @include adaptiveValue("margin-bottom", 80, 42);
     position: relative;
     // .home-catalog__container
     &__container {
@@ -445,14 +445,10 @@
 .header-services {
     // .header-services__image
     &__image {
-        margin-top: rem(-70);
         height: rem(385);
         border-radius: 10px;
         box-shadow: 0px 23px 62px 0px rgba(211, 231, 240, 0.9);
         overflow: hidden;
-
-        /* transform: scaleY(1.05);
-        transform-origin: left; */
 
         img {
             width: 100%;
@@ -463,6 +459,7 @@
 
         @media (min-width: $tablet) {
             flex: 0 0 55%;
+            margin-top: rem(-70);
         }
     }
     // .header-services__content

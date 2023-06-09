@@ -1,16 +1,58 @@
 .related {
     @include adaptiveValue("margin-bottom", 60, 32);
-    
+    position: relative;
+
     // .related__title
     &__title {
         @include adaptiveValue("margin-bottom", 32, 24);
     }
     // .related__excerpt
     &__excerpt {
-        @include adaptiveValue("margin-bottom", 48, 32);
+        margin-bottom: 0;
+
+        .touch & {
+            @include adaptiveValue("margin-bottom", 48, 24);
+        }
     }
-    // .related__list
-    &__list {
-        @include gridCards("fill", rem(300), 1fr);
+    // .related__content
+    &__content {
+        padding: rem(30) rem(15);
+        overflow: hidden;
+
+        .touch & {
+            padding: 0;
+        }
+    }
+    // .related__slider
+    &__slider {
+        overflow: visible !important;
+    }
+    // .related__wrapper
+    &__wrapper {
+    }
+    // .related__slide
+    &__slide {
+    }
+    // .related__nav
+    &__nav {
+        display: none;
+        @media (min-width: $mobile) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 103%;
+
+            position: absolute;
+            bottom: 43%;
+            left: rem(-20);
+
+            .next {
+                transform: rotate(-180deg);
+            }
+
+            path {
+                fill: $blue;
+            }
+        }
     }
 }

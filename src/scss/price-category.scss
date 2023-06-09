@@ -21,7 +21,7 @@
         display: grid;
         gap: rem(15);
         @include adaptiveValue("margin-bottom", 60, 32);
-        padding: rem(20);
+        padding: rem(55) rem(20) rem(40);
 
         background: url("@img/price-bg.png") 0 0 no-repeat;
         background-size: cover !important;

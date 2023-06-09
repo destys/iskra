@@ -14,6 +14,11 @@
     &__container {
         width: 100%;
         max-width: rem(1000);
+
+        @media (max-width: $mobile) {
+            padding-top: rem(25);
+            padding-bottom: rem(15);
+        }
     }
     // .callback__title
     &__title {

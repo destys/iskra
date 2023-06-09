@@ -25,8 +25,6 @@ import "../../scss/base/swiper.scss";
 
 // Ініціалізація слайдерів
 function initSliders() {
-	// Список слайдерів
-	// Перевіряємо, чи є слайдер на сторінці
 	if (document.querySelector('.confidence__slider')) { // Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
 		new Swiper('.confidence__slider', { // Вказуємо склас потрібного слайдера
@@ -94,6 +92,53 @@ function initSliders() {
 						nextEl: '.swiper-button-next',
 					},
 				},
+			},
+
+			// Події
+			on: {
+
+			}
+		});
+	}
+	if (document.querySelector('.related__slider')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.related__slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 20,
+			//autoHeight: true,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			lazy: true,
+
+			// Брейкпоінти
+			breakpoints: {
+				560: {
+					slidesPerView: 2,
+					autoHeight: true,
+				},
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 32,
+				},
+				1335: {
+					slidesPerView: 4,
+					spaceBetween: 32,
+
+				},
+			},
+
+			navigation: {
+				prevEl: '.related__nav .prev',
+				nextEl: '.related__nav .next',
 			},
 
 			// Події

@@ -9,7 +9,7 @@
         grid-template-columns: rem(280) 1fr;
         gap: rem(30);
 
-        margin-bottom: rem(50);
+        @include adaptiveValue("margin-bottom", 50, 20);
 
         @media (max-width: $mobile) {
             display: block;
@@ -45,13 +45,16 @@
     // .service__help
     &__help {
         display: flex;
+        flex-direction: column;
         gap: rem(30);
         @include adaptiveValue("margin-bottom", 60, 32);
         padding: rem(20);
 
         background: url("@img/price-bg.jpg") 0 0 no-repeat;
+        background-color: cover;
 
         @media (min-width: $tablet) {
+            flex-direction: row;
             padding: rem(80) rem(30);
         }
     }
