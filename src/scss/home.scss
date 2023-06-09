@@ -17,7 +17,7 @@
     &__content {
         padding-top: rem(120);
         @include adaptiveValue("padding-top", 120, 30);
-        @include adaptiveValue("padding-left", 70, 15, 0, 1920, 1335);
+        @include adaptiveValue("padding-left", 75, 50, 0, 1920, 1024);
         max-width: rem(600);
     }
     // .intro__top-title
@@ -406,7 +406,7 @@
     }
     // .services__list
     &__list {
-        @include gridCards("fill", rem(300), 1fr);
+        @include gridCards("fit", rem(300), 1fr);
         position: relative;
         z-index: 2;
     }

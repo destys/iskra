@@ -36,6 +36,12 @@
     // .top-footer__col
     &__col {
     }
+    // .top-footer__title
+    &__title {
+        margin-bottom: rem(39);
+        font-weight: 500;
+        font-size: rem(16);
+    }
     // .top-footer__menu
     &__menu {
         &:not(:last-child) {
@@ -53,7 +59,7 @@
             &__title {
                 display: block;
                 margin-bottom: rem(10);
-                font-weight: 600;
+                font-weight: 500;
                 font-size: rem(16);
             }
             // .menu__list
