@@ -17,8 +17,11 @@
     &__content {
         padding-top: rem(120);
         @include adaptiveValue("padding-top", 120, 30);
-        @include adaptiveValue("padding-left", 75, 50, 0, 1920, 1024);
         max-width: rem(600);
+
+        @media (min-width: $mobile) {
+            @include adaptiveValue("padding-left", 75, 50, 0, 1920, 1024);
+        }
     }
     // .intro__top-title
     &__top-title {
