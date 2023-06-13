@@ -1,5 +1,5 @@
 .related {
-    @include adaptiveValue("margin-bottom", 60, 32);
+    @include adaptiveValue("margin-bottom", 60, 14);
     position: relative;
 
     // .related__title
@@ -16,11 +16,10 @@
     }
     // .related__content
     &__content {
-        padding: rem(30) rem(15);
         overflow: hidden;
 
-        .touch & {
-            padding: 0;
+        @media (min-width: $tablet) {
+            padding: rem(30) rem(15);
         }
     }
     // .related__slider

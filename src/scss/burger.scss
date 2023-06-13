@@ -4,10 +4,14 @@
         display: block;
 
         width: 100%;
-        height: rem(500);
+        height: 100%;
+        min-height: rem(400);
         background-color: $blue;
         overflow-x: hidden;
         overflow-y: scroll;
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
 
         transform: translateX(-300%);
         opacity: 0;
