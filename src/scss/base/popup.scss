@@ -26,7 +26,7 @@ body::after {
 	pointer-events: none;
 }
 .popup_show {
-	z-index: 150;
+	z-index: 1500;
 	visibility: visible;
 	overflow: auto;
 	pointer-events: auto;
